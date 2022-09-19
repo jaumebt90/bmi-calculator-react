@@ -27,13 +27,13 @@ function App() {
     <div className="app">
       <div className="container">
         <h2 className="center">BMI Calculator</h2>
-        <form>
+        <form onSubmit={calcBMI}>
           <div>
-            <label>Height (kg)</label>
+            <label>Height (cm)</label>
             <input value={height} onChange={(e) => setHeight(e.target.value)} />
           </div>
           <div>
-            <label>Weight (cm)</label>
+            <label>Weight (kg)</label>
             <input
               value={weight}
               onChange={(event) => setWeight(event.target.value)}
@@ -44,7 +44,7 @@ function App() {
               Submit
             </button>
             <button className="btn btn-outline" type="submit">
-              Submit
+              Reload
             </button>
           </div>
         </form>
