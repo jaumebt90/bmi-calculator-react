@@ -25,6 +25,9 @@ function App() {
             <input value={weight} />
           </div>
           <div>
+            <button className="btn" type="submit">
+              Submit
+            </button>
             <button className="btn btn-outline" type="submit">
               Submit
             </button>
