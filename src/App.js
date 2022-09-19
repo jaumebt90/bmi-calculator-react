@@ -30,10 +30,7 @@ function App() {
         <form>
           <div>
             <label>Height (kg)</label>
-            <input
-              value={height}
-              onChange={(event) => setHeight(event.target.value)}
-            />
+            <input value={height} onChange={(e) => setHeight(e.target.value)} />
           </div>
           <div>
             <label>Weight (cm)</label>
