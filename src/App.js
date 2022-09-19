@@ -32,7 +32,18 @@ function App() {
   };
 
   //Show image
-  let imgSrc = "";
+  let imgSrc;
+  if (bmi < 1) {
+    imgSrc = null;
+  } else {
+    if (bmi < 25) {
+      imgSrc = require("./assets/underweight.png");
+    } else if (bmi >= 25 && bmi < 30) {
+      imgSrc = require("./assets/healthy.png");
+    } else {
+      imgSrc = require("./assets/overweight.png");
+    }
+  }
 
   let reload = () => {
     window.location.reload();
