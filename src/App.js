@@ -4,12 +4,10 @@ import "./index.css";
 function App() {
   //State
 
-  const [height, setHeight] = useState(0);
-  const [weight, setWeight] = useState(0);
+  const [height, setHeight] = useState("Enter you're height");
+  const [weight, setWeight] = useState("Enter you're weight");
   const [bmi, setBmi] = useState("");
   const [message, setMessage] = useState("");
-
-  let imgSrc = "";
 
   let calcBMI = (event) => {
     //prevent submitting
@@ -32,6 +30,9 @@ function App() {
       }
     }
   };
+
+  //Show image
+  let imgSrc = "";
 
   let reload = () => {
     window.location.reload();
