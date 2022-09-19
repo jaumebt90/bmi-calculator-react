@@ -15,11 +15,14 @@ function App() {
             <input value={weight} />
           </div>
           <div>
-            <button className="btn" type="submit">
+            <button className="btn btn-outline" type="submit">
               Submit
             </button>
           </div>
         </form>
+        <div className="center">
+          <h3>Your BMI is: {bmi}</h3>
+        </div>
       </div>
     </div>
   );
