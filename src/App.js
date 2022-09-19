@@ -23,6 +23,10 @@ function App() {
     }
   };
 
+  let reload = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="app">
       <div className="container">
@@ -43,7 +47,7 @@ function App() {
             <button className="btn" type="submit">
               Submit
             </button>
-            <button className="btn btn-outline" type="submit">
+            <button className="btn btn-outline" onClick={reload} type="submit">
               Reload
             </button>
           </div>
