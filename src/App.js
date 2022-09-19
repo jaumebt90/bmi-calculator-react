@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
         </form>
         <div className="center">
           <h3>Your BMI is: {bmi}</h3>
+          <p>{message}</p>
+        </div>
+        <div className="img-container">
+          <img src={imgSrc} alt=""></img>
         </div>
       </div>
     </div>
