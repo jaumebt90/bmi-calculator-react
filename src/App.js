@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 
 function App() {
+  //State
+
+  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState(0);
+  const [bmi, setBmi] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <div className="app">
       <div className="container">
