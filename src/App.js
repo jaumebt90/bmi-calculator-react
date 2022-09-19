@@ -11,6 +11,8 @@ function App() {
 
   let imgSrc = "";
 
+  let calcBMI = (event) => {};
+
   return (
     <div className="app">
       <div className="container">
