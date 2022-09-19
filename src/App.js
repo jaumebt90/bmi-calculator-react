@@ -4,8 +4,8 @@ import "./index.css";
 function App() {
   //State
 
-  const [height, setHeight] = useState("Enter you're height");
-  const [weight, setWeight] = useState("Enter you're weight");
+  const [height, setHeight] = useState("");
+  const [weight, setWeight] = useState("");
   const [bmi, setBmi] = useState("");
   const [message, setMessage] = useState("");
 
