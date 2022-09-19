@@ -11,7 +11,17 @@ function App() {
 
   let imgSrc = "";
 
-  let calcBMI = (event) => {};
+  let calcBMI = (event) => {
+    //prevent submitting
+    event.preventDefault();
+
+    if (height === 0 || weight === 0) {
+      alert("Please enter a valid height and weight");
+    } else {
+      let bmi = weight / (height / 100) ** 2;
+      setBmi(bmi.toFixed(1));
+    }
+  };
 
   return (
     <div className="app">
